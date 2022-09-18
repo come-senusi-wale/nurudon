@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	let calAge = function(birthday){
+		return 2035 - birthday;
+	}
+
+	function retirement(birthday, firstName){
+		let age = calAge(birthday);
+
+		return `me ${firstName} my age is ${age}`;
+
+	}
+
+	let wale = retirement(1980, 'Akinwale');
+
+	console.log(wale);
+
+
+</script>
+<script src="maxudemy.js"></script>
+</body>
+</html>

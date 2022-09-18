@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>print</title>
+
+	<style type="text/css">
+		
+		.container{
+			width: 70%;
+			margin: 0 auto;
+			background-color: #989896;
+		}
+
+		form{
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		input{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 10px 5px;
+		}
+
+		@media print {
+
+			body *{
+				visibility: hidden;
+			}
+
+			.container, .container *{
+				visibility: visible;
+			}
+
+			.wrap *{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<form>
+			<h2>sign</h2>
+			<input type="text" name="" placeholder="name">
+			<input type="text" name="" placeholder="email">
+			<input type="text" name="" placeholder="contact">
+
+			<div class="wrap">
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+	</div>
+
+		</form>
+
+		<h2>come let place</h2>
+		<p>our product are good for every one of our society come enjoy our life together</p>
+	</div>
+
+	<div class="wrap">
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+		<p>senusi the find my trouble every day</p>
+	</div>
+
+	<button onclick="window.print();">print</button>
+
+</body>
+</html>

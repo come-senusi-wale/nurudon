@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate banner 2</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 70%;
+        height: 400px;
+       
+        background-color: antiquewhite;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .img-box{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: all ease-in-out 500ms;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-left{
+        position: relative;
+        bottom: 50%;
+        padding: 5px 5px;
+        font-size: large;
+    }
+
+    .btn-right{
+        float: right;
+        position: relative;
+        bottom: 50%;
+        padding: 5px 5px;
+        font-size: large;
+    }
+
+    .dot-container{
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+        display: flex;
+        transform: translateX(50%);
+    }
+    
+
+    .dot{
+        width: 10px;
+        height: 10px;
+        border: 1px slategray solid;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .active-dot{
+        background-color: slategray;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="img-box">
+
+           <div class="img img1">
+               <img src="images/ele.jpg" alt="ele">
+           </div>
+
+           <div class="img img2">
+            <img src="images/eig.jpg" alt="ele">
+            </div>
+
+            <div class="img img3">
+                <img src="images/nin.jpg" alt="ele">
+            </div>
+
+            <div class="img img4">
+                <img src="images/twe.jpg" alt="ele">
+            </div>
+
+        </div>
+
+        <button class="btn btn-left">&larr;</button>
+        <button class="btn btn-right">&rarr;</button>
+
+        <div class="dot-container">
+           <!-- <div class="dot" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+            <div class="dot" data-slide="3"></div>-->
+        </div>
+
+    </div>
+
+    <script src="rotatebanner2.js"></script>
+</body>
+</html>

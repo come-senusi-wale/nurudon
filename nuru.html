@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nurudeen</title>
+
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+
+		}
+
+		body{
+			background-color: #b0c4de;
+		}
+		.container{
+			width: 90%;
+			height: 600px;
+			margin-left: 5%;
+			margin-top: 20px;
+			background-color: #b0c4de;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.top-nav{
+			width: 90%;
+			height: 9%;
+			margin-left: 5%;
+			background-color: #fff;
+			margin-bottom: 1%;
+			display: flex;
+		}
+
+		.top-nav #logo{
+			display: inline-block;
+			width: 7%;
+			font-size: 30px;
+			color: #fff;
+			line-height: 60px;
+			padding-left: 2%;
+			background-color: #00ffff;
+		}
+
+		.top-nav .link{
+			width: 63%;
+			display:flex;
+			list-style-type: none;
+			line-height: 50px;
+		}
+
+		.top-nav .link li a{
+			text-decoration: none;
+			padding-left: 40px;
+			color: #a9a9a9;
+			text-transform: capitalize;
+			font-size: 20px;
+		}
+
+		.top-nav .link li .blog{
+			color: #00ffff;
+		}
+
+		.top-nav .brand{
+			width: 30%;
+			display: flex;
+			list-style-type: none;
+			justify-content: flex-end;
+			line-height: 50px;
+			padding-right: 20px;
+		}
+
+		.top-nav .brand li a{
+			text-decoration: none;
+			padding-left: 25px;
+			color: #a9a9a9; 
+		}
+
+		.top-nav .brand .face{
+			border-left: 1px solid #a9a9a9;
+			margin-left: 20px;
+			
+		}
+
+		.top-nav .brand .google{
+			border-right: 1px solid #a9a9a9;
+			padding-right: 20px;
+		}
+
+
+
+		.body{
+			width: 90%;
+			height: 90%;
+			margin-left: 5%;
+			/*background-color: blue;*/
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.left-body{
+			width: 49.5%;
+			height: 100%;
+			/*background-color: violet;*/
+			display: flex;
+
+		}
+
+		.right-body{
+			width: 49.5%;
+			height: 100%;
+			/*background-color: green;*/
+			display: flex;
+			flex-direction: column;
+		}
+
+		.left-body .left-nav{
+			width: 50%;
+			height: 100%;
+			/*background-color: blue;*/
+			display: flex;
+			flex-direction: column;
+		}
+
+
+
+		.left-nav #service{
+			width: 100%;
+			height: 65%;
+			background-color: #fff;
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.left-nav #service li{
+			width: 100%;
+			height: 14.28%;
+			padding-left: 10px;
+			border-bottom: 1px solid #a9a9a9;
+			line-height: 50px;
+			font-size: 20px;
+			text-transform: capitalize;
+		}
+
+		.left-nav #service .blog{
+			background-color: #00ffff;
+		}
+
+		.left-nav #service li a{
+			text-decoration: none;
+			padding-left: 10px;
+			color: #a9a9a9;
+		}
+
+		.left-nav #service li a i{
+			padding-right: 20px;
+		}
+
+		.left-nav #contact{
+			width: 100%;
+			height: 35%;
+			background-color: grey;
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.left-nav #contact li{
+			width: 100%;
+			height: 33.33%;
+			padding-left: 20px;
+			display: flex;
+		}
+
+		.left-nav #contact li i{
+			padding-right: 40px;
+			width: 18%;
+			padding-top: 20px;
+			color: #fff;
+		}
+
+		.left-nav #contact li p{
+			width: 82%;
+			padding-top: 5px;
+			color: #fff;
+		}
+
+		.left-body .right-nav{
+			width: 50%;
+			height: 100%;
+			background-color: #000;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.right-nav ul{
+			width: 100%;
+			height: 25%;
+			list-style-type: none;
+			font-size: 20px;
+			padding-left: 20px;
+			border-bottom: 2px solid #696969;
+		}
+
+		.right-nav ul li{
+			margin-top: 10px;
+			text-transform: capitalize;
+			color: #fff;
+		}
+
+		.right-nav ul #one{
+			display: flex;
+		}
+
+		.right-nav ul #one p{
+			width: 90%;
+			color: #00ffff;
+		}
+
+		.right-nav ul #one i{
+			width: 10%;
+			background-color: #00ffff;
+			padding-left: 7px;
+			padding-top: 3px;
+			margin-right: 20px;
+			border-radius: 50%;
+		}
+
+		
+
+		.right-body .top{
+			width: 100%;
+			height: 50%;
+			/*background-color: #ad436e;*/
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.right-body .middle{
+			width: 100%;
+			height: 24%;
+			margin-top: 2%;
+			background-color: #fff;
+
+		}
+
+		.middle h2{
+			text-align: center;
+			text-transform: capitalize;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
+		.middle #text{
+			text-align: center;
+			padding-bottom: 10px;
+			font-size: 20px;
+		}
+
+		.middle #icon{
+			text-align: center;
+			font-size: 15px;
+		}
+
+		.middle #icon .fa-facebook-f{
+			background-color: #6495ed;
+			
+		}
+		
+
+		.middle #icon .fa-twitter{
+			background-color: #00ffff;
+			
+		}
+		
+
+		.middle #icon .fa-google-plus-g{
+			background-color: #dc143c;
+			
+		}
+		
+
+		.middle #icon .fa-linkedin-in{
+			background-color: #0000ff;
+		
+			
+		}
+
+		.middle #icon i{
+			padding: 5px 10px;
+			color: #fff;
+			border-radius: 50%;
+			margin-left: 5px;
+		}
+
+		.right-body .bottom{
+			width: 100%;
+			height: 24%;
+			margin-top: 2%;
+			background-color: #fff;
+		}
+
+		.bottom h2{
+			text-align: center;
+			text-transform: capitalize;
+			padding-top: 20px;
+		}
+
+		.bottom p{
+			text-align: center;
+			padding-top: 10px;
+			font-size: 20px;
+		}
+
+		.bottom form{
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		.bottom form input[type="text"]{
+			font-size: 25px;
+			padding-left: 10px;
+		}
+
+		.bottom form input[type="submit"]{
+			background-color: #dc143c;
+			border: none;
+			text-align: center;
+			width: 100px;
+			font-size: 25px;
+			color: #fff;
+			border-radius: 5px;
+		}
+
+		.top .link{
+			width: 49%;
+			height: 100%;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.link ul{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.link ul li{
+			width: 100%;
+			height: 20%;
+			padding-left: 20px;
+			list-style-type: none;
+			font-size: 20px;
+			padding-top: 10px;
+			color: #696969;
+			text-transform: capitalize;
+		}
+
+		.link ul li i{
+			margin-right: 20px;
+			background-color: #696969;
+			color: #fff;
+			padding: 7px;
+			border-radius: 50%;
+			font-size: 20px;
+		}
+
+		.top .icon{
+
+			width: 49%;
+			height: 100%;
+			/*background-color: #000;*/
+			display: flex;
+			flex-direction: column;
+			align-content: space-between;
+		}
+
+		.icon .face-book{
+			width: 100%;
+			height: 48.5%;
+			background-color: blue;
+			margin-bottom: 6%;
+		}
+
+		.face-book h2, .twitter h2{
+			width: 100%;
+			height: 50%;
+			padding-left: 20px;
+			padding-top: 20px;
+			color: #fff;
+			font-size: 30px;
+		}
+
+		.face-book #price, .twitter #pric{
+			float: left;
+			width: 60%;
+			padding-left: 20px;
+			padding-top: 30px;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.face-book #icon, .twitter #ico{
+			float: left;
+			width: 40%;
+			padding-top: 30px;
+			padding-left: 10px;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.face-book #icon i, .twitter #ico i{
+			padding-left: 10px;
+		}
+
+
+		.icon .twitter{
+			width: 100%;
+			height: 48.5%;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="top-nav">
+
+			<a id="logo" href="#"><i class="fa fa-bars"></i></a>
+
+			<ul class="link">
+				<li><a href="#">home</a></li>
+
+				<li><a href="#">store</a></li>
+
+				<li><a href="#" class="blog">blog</a></li>
+
+				<li><a href="#">about</a></li>
+
+				<li><a href="#">contact</a></li>
+			</ul>
+
+			
+			<ul class="brand">
+				<li><a href="#"><i class="fa fa-search"></i></a></li>
+
+				<li class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+				<li class="google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+
+				<li><a href="#"><i class="fa fa-user"></i></a></li>
+
+			</ul>
+		</div>
+
+		<div class="body">
+			
+			<div class="left-body">
+
+				<div class="left-nav">
+					
+					<ul id="service">
+						<li><a href="#"><i class="fa fa-home"></i> home</a></li>
+						<li><a href="#"><i class="fa fa-shopping-cart"></i> store</a></li>
+						<li class="blog"><a href="#"><i class="fa fa-fax"></i> blog</a></li>
+						<li><a href="#"><i class="fa fa-gift"></i> community</a></li>
+						<li><a href="#"><i class="fa fa-hourglass"></i> contests</a></li>
+						<li><a href="#"><i class="fa fa-camera"></i> about</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i> contact</a></li>
+					</ul>
+
+					<ul id="contact">
+						<li><i class="fa fa-phone"></i><p> 08104322128<br>09045638272</p></li>
+
+						<li><i class="fa fa-tint"></i><p>come and see am<br> doing at school that<br> is get people talkig</p></li>
+
+						
+						<li><i class="fa fa-envelope"></i><p> come yet to and pray is time<br> don forget to</p></li>
+					</ul>
+
+				</div>
+
+				<div class="right-nav">
+					<ul>
+						<li id="one"><p>tech</p><i class="fas fa-angle-right"></i></li>
+						<li>firm</li>
+						<li>sport</li>
+						<li>music</li>
+					</ul>
+
+					<ul>
+						<li id="one"><p>entainment</p><i class="fas fa-angle-right"></i></li>
+						<li>firm</li>
+						<li>sport</li>
+						<li>music</li>
+					</ul>
+					<ul>
+						<li id="one"><p>businees</p><i class="fas fa-angle-right"></i></li>
+						<li>firm</li>
+						<li>sport</li>
+						<li>music</li>
+					</ul>
+
+					<ul>
+						<li id="one"><p>lifestyle</p><i class="fas fa-angle-right"></i></li>
+						<li>firm</li>
+						<li>sport</li>
+						<li>music</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="right-body">
+				
+				<div class="top">
+					
+					<div class="link">
+						<ul>
+							<li><i class="fab fa-facebook-f"></i> face book</li>
+							<li><i class="fab fa-twitter"></i> twitter</li>
+							<li><i class="fab fa-google-plus-g"></i> google +</li>
+							<li><i class="fa fa-rss"></i> riss feeds</li>
+							<li><i class="fab fa-pinterest-p"></i> pritrest</li>
+						</ul>
+					</div>
+
+					<div class="icon">
+						
+						<div class="face-book">
+							
+							<h2><i class="fab fa-facebook-f"></i></h2>
+
+							<p id="price">156k</p>
+
+							<p id="icon">follow<i class="far fa-arrow-alt-circle-down"></i></p>
+
+						</div>
+
+						<div class="twitter">
+							
+							<h2><i class="fab fa-twitter"></i></h2>
+
+							<p id="pric">156k</p>
+
+							<p id="ico">follow<i class="fa fa-check-circle"></i></p>
+							
+						</div>
+					</div>
+
+				</div>
+
+				<div class="middle">
+					<h2>sign in</h2>
+					<p id="text">come to school to type and dont be late</p>
+					<p id="icon">
+						<i class="fab fa-facebook-f"></i>
+
+						<i class="fab fa-twitter"></i>
+
+						<i class="fab fa-google-plus-g"></i>
+
+						<i class="fab fa-linkedin-in"></i>
+					</p>
+				</div>
+
+				<div class="bottom">
+					
+					<h2>join the hewsletter</h2>
+
+					<p>sign upfour parent daily newsletter</p>
+
+					<form>
+						<input type="text" name="" placeholder="enter email address">
+
+						<input type="submit" name="" value="sign up">
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>
